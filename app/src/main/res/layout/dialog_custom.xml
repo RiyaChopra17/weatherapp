@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+
+        android:paddingBottom="10dp"
+        android:background="@drawable/ic_cloud_queue_dark"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/dialogheaderIconImagevw"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_cloud_queue_dark" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/dailogTitleTxtVw"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="28sp"-->
+            <!--android:text="Error"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textColor="#232323" />-->
+        <LinearLayout
+            android:id="@+id/dialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:layout_below="@id/dialogheaderIconImagevw"
+            >
+
+        <TextView
+            android:id="@+id/txtDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogheaderIconImagevw"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtDialogLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDialogMessage"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/purple_200"
+            android:textSize="17sp"
+
+            android:textStyle="normal" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnDialogOk"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="@color/main_color"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_below="@+id/dialogMessage"
+            android:text="Ok"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="310dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/custom_dailog_frame"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dailogTitleTxtVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="Alert!"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#232323" />
+
+        <TextView
+            android:id="@+id/txtDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dailogTitleTxtVw"
+            android:layout_gravity="left|top"
+            android:layout_above="@+id/btnDialogOk"
+            android:gravity="left|top"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="#232323"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+
+
+        <Button
+            android:id="@+id/btnDialogOk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#EAE8E9"
+            android:layout_alignParentBottom="true"
+            android:text="Ok"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dialogheaderIconImagevw"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cancel_msg" />
+
+    </RelativeLayout>-->
+

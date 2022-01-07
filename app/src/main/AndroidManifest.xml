@@ -52,6 +52,7 @@
         <activity
             android:name=".WeatherActivity"
             android:exported="true"
+            android:hardwareAccelerated="false"
             android:theme="@style/CustomEditorTheme"></activity>
         <activity
             android:name=".MainActivity"

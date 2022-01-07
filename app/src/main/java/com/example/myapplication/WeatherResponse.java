@@ -28,61 +28,62 @@ public class WeatherResponse {
     public String name;
     @SerializedName("cod")
     public float cod;
-}
 
-class Weather {
-    @SerializedName("id")
-    public int id;
-    @SerializedName("main")
-    public String main;
-    @SerializedName("description")
-    public String description;
-    @SerializedName("icon")
-    public String icon;
-}
 
-class Clouds {
-    @SerializedName("all")
-    public float all;
-}
+    class Weather {
+        @SerializedName("id")
+        public int id;
+        @SerializedName("main")
+        public String main;
+        @SerializedName("description")
+        public String description;
+        @SerializedName("icon")
+        public String icon;
+    }
 
-class Rain {
-    @SerializedName("3h")
-    public float h3;
-}
+    class Clouds {
+        @SerializedName("all")
+        public float all;
+    }
 
-class Wind {
-    @SerializedName("speed")
-    public float speed;
-    @SerializedName("deg")
-    public float deg;
-}
+    class Rain {
+        @SerializedName("3h")
+        public float h3;
+    }
 
-class Main {
-    @SerializedName("temp")
-    public float temp;
-    @SerializedName("humidity")
-    public float humidity;
-    @SerializedName("pressure")
-    public float pressure;
-    @SerializedName("temp_min")
-    public float temp_min;
-    @SerializedName("temp_max")
-    public float temp_max;
-}
+    class Wind {
+        @SerializedName("speed")
+        public float speed;
+        @SerializedName("deg")
+        public float deg;
+    }
 
-class Sys {
-    @SerializedName("country")
-    public String country;
-    @SerializedName("sunrise")
-    public long sunrise;
-    @SerializedName("sunset")
-    public long sunset;
-}
+    class Main {
+        @SerializedName("temp")
+        public float temp;
+        @SerializedName("humidity")
+        public float humidity;
+        @SerializedName("pressure")
+        public float pressure;
+        @SerializedName("temp_min")
+        public float temp_min;
+        @SerializedName("temp_max")
+        public float temp_max;
+    }
 
-class Coord {
-    @SerializedName("lon")
-    public float lon;
-    @SerializedName("lat")
-    public float lat;
+    class Sys {
+        @SerializedName("country")
+        public String country;
+        @SerializedName("sunrise")
+        public long sunrise;
+        @SerializedName("sunset")
+        public long sunset;
+    }
+
+    class Coord {
+        @SerializedName("lon")
+        public float lon;
+        @SerializedName("lat")
+        public float lat;
+    }
 }

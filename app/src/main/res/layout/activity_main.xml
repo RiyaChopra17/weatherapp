@@ -100,12 +100,12 @@
             android:layout_below="@+id/headers"
             android:background="@color/black"
             android:inputType="textCapSentences"
-            android:id="@+id/search_country"
+            android:id="@+id/search_city"
             />
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@+id/search_country"
+            android:layout_below="@+id/search_city"
             android:id="@+id/listview"
             android:dividerHeight="0dp"
             android:divider="#ffffff"

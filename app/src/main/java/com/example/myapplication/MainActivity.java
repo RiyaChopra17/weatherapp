@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         spinner = (Spinner) findViewById(R.id.spinner);
         cityTxt=(TextView)findViewById(R.id.countryCodeTxt);
         search_dialog=(RelativeLayout)findViewById(R.id.search_dialog);
-        search_country=(EditText)findViewById(R.id.search_country);
+        search_country=(EditText)findViewById(R.id.search_city);
         listView=(ListView) findViewById(R.id.listview);
         cityTxt.setOnClickListener(this);
         //  Typeface typeface = Typeface.createFromAsset(getAssets(), "Lato-Bold.ttf");
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  getCurrentData();
+                getCurrentData();
             }
         });
 
@@ -119,20 +119,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         myAdpater.onCallBackReturn(new MyAdpater.Callback() {
             @Override
-            public void clickaction(int flagimage,String states,String citys) {
+            public void clickaction(int position, String states, String citys, String lat, String lon) {
                 String filename = states;   // full file name
-              //  String[] parts = filename.split("\\("); // String array, each element is text between dots
+                //  String[] parts = filename.split("\\("); // String array, each element is text between dots
 
 
                 cityTxt.setText("+"+states+"");
                 Log.i("==========code",citys);
                 Log.i("==========code",filename);
-              //  city= parts[0];
-              //  state=String.valueOf(dialcodes);
+                //  city= parts[0];
+                //  state=String.valueOf(dialcodes);
                 search_dialog.setVisibility(View.GONE);
                 search_country.setText("");
                 myAdpater.notifyDataSetChanged();
             }
+
+
         });
     }
     private static String getJsonFromRaw(Context context, int resource) {

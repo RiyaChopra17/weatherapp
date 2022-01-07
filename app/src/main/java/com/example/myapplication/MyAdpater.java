@@ -76,7 +76,10 @@ public class MyAdpater extends BaseAdapter {
                     int flad_id=getFlagResource(mCountries.get(position));
                     String state=mCountries.get(position).getState();
                     String city=mCountries.get(position).getName();
-                    callback.clickaction(flad_id,state,city);
+                    String lat=mCountries.get(position).getLat();
+                    String lon=mCountries.get(position).getLon();
+
+                    callback.clickaction(flad_id,state,city,lat,lon);
                 }
             }
         });
@@ -95,7 +98,7 @@ public class MyAdpater extends BaseAdapter {
     }
 
     public interface Callback{
-        void clickaction(int position, String dialcode, String countryname);
+        void clickaction(int position, String dialcode, String countryname,String lat, String lon);
     }
 
     public void filter(String charText) {
