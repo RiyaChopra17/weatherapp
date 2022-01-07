@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_cloud_queue_dark.xml" value="0.2203125" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_location_on.xml" value="0.2203125" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_undraw_season_change.xml" value="0.2203125" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/weather_card_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.2159406858202039" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_weather.xml" value="0.24449108079748164" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_weathers.xml" value="0.33" />
+        <entry key="..\:/Users/parag/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/item_country_drop.xml" value="0.3069828722002635" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
